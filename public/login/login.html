@@ -148,10 +148,16 @@
       <input type="password" placeholder="Password" id="password" />
       <input type="password" placeholder="Password" id="password" />
 
-      <button onclick="location.href='../index.js?username=JohnDoe'" type="button">
+      <button onclick="redirectToIndex()" type="button">
         Login
     </button>
-
+    
+    <script>
+    function redirectToIndex() {
+        var username = document.getElementById('username').value;
+        location.href = '../index.html?username=' + encodeURIComponent(username);
+    }
+    </script>
       <button onclick="location.href='register.html?username=JohnDoe'" type="button">
         Register
     </button>

@@ -39,6 +39,13 @@ body {
   transform: rotate(-6deg);
 }
 
+.usergreeting {
+  font-size: 2.7rem;
+  margin-left: 20rem;
+  margin-top: 1rem;
+  color: coral;
+}
+
 .online {
   margin-left: auto;
   margin-right: 1rem;
@@ -157,6 +164,11 @@ body {
   /* 900px */
   .description {
     margin-left: 6rem;
+    font-size: 2rem;
+  }
+
+  .usergreeting {
+    margin-left: 8rem;
     font-size: 2rem;
   }
 
