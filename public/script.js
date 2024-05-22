@@ -18,6 +18,8 @@ socket.on("searching", (msg) => {
   conversation.innerHTML = `<div class="message">${msg}</div>`;
 });
 
+const video = document.querySelector("#video");
+
 socket.on("chatStart", (msg) => {
   conversation.innerHTML = `<div class="message">${msg}</div>`;
 
@@ -28,6 +30,8 @@ socket.on("chatStart", (msg) => {
   document.querySelector("#text").disabled = false;
 
   document.querySelector("#send").disabled = false;
+  video.style.display = "block";
+  video.play();
 });
 
 document.querySelector(".form").addEventListener("submit", (e) => {
